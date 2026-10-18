@@ -1,0 +1,143 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /* Evita que los tamaños se rompan con el padding */
+}
+
+body{
+    background: #e6e6e6;
+    font-family: Arial, sans-serif; /* Tipografía más limpia y legible */
+}
+
+header, .main, footer{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+header nav{
+    background: #2c3e50; /* Azul oscuro institucional */
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    padding: 15px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    background: #34495e;
+}
+
+.main {
+    overflow: hidden; /* Limpia los floats de los artículos y el aside */
+    margin-top: 10px;
+}
+
+.main .articles{
+    width: 68.5%;
+    margin-right: 1.5%;
+    float: left;
+}
+
+.main .articles article{
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.05); /* Sombra sutil escolar */
+}
+
+.main .articles article h2{
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.main .articles article p {
+    line-height: 1.6; /* Mayor espacio entre renglones para leer mejor */
+    color: #444;
+}
+
+aside{
+    width: 30%;
+    background: #34495e; /* Azul complementario para reemplazar el rojo */
+    color: #fff;
+    float: left;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+aside h3{
+    margin-bottom: 15px;
+}
+
+/* Estilos de los links en la barra lateral */
+.sidebar-links {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sidebar-links li {
+    margin-bottom: 10px;
+}
+
+.sidebar-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-links li a:hover {
+    text-decoration: underline;
+}
+
+/* AQUÍ SE INTEGRARON LOS ESTILOS PARA TU CÓDIGO QR */
+.qr-container {
+    margin-top: 25px;
+    background: #2c3e50; /* Fondo oscuro que resalta el recuadro blanco del QR */
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.qr-container h4 {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.qr-text {
+    font-size: 12px;
+    color: #bdc3c7;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.qr-image {
+    width: 140px; /* Tamaño ideal y cuadrado para ser escaneado con la cámara */
+    height: 140px;
+    background: #fff; 
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+footer{
+    background: #1a252f;
+    color: #fff;
+    clear: both;
+    padding: 15px 0px;
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+}
